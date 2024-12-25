@@ -52,16 +52,16 @@ function updateSlider() {
 }
 
 
-const testimonials = document.querySelectorAll('.testimonial');
-let currentTestimonial = 0;
+// const testimonials = document.querySelectorAll('.testimonial');
+// let currentTestimonial = 0;
 
-function showNextTestimonial() {
-  testimonials[currentTestimonial].style.display = 'none';
-  currentTestimonial = (currentTestimonial + 1) % testimonials.length;
-  testimonials[currentTestimonial].style.display = 'block';
-}
+// function showNextTestimonial() {
+//   testimonials[currentTestimonial].style.display = 'none';
+//   currentTestimonial = (currentTestimonial + 1) % testimonials.length;
+//   testimonials[currentTestimonial].style.display = 'block';
+// }
 
-setInterval(showNextTestimonial, 5000); // Change testimonial every 5 seconds
+// setInterval(showNextTestimonial, 5000); // Change testimonial every 5 seconds
 
 
 document.querySelectorAll('.faq-title').forEach((item, index) => {
