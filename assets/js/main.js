@@ -84,3 +84,38 @@ document.querySelectorAll('.faq-content').forEach(content => {
 if (document.querySelectorAll('.faq-content').length > 0) {
     document.querySelectorAll('.faq-content')[0].style.display = 'block';
 }
+
+// JavaScript Animations and Interactions
+document.addEventListener("DOMContentLoaded", () => {
+    const animateElements = document.querySelectorAll("[data-animate]");
+  
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const animation = entry.target.getAttribute("data-animate");
+          entry.target.classList.add(animation);
+          observer.unobserve(entry.target);
+        }
+      });
+    }, {
+      threshold: 0.2,
+    });
+  
+    animateElements.forEach((el) => {
+      observer.observe(el);
+    });
+  
+    // FAQ Accordion
+    const faqItems = document.querySelectorAll(".faq-item h3");
+    faqItems.forEach((item) => {
+      item.addEventListener("click", () => {
+        const content = item.nextElementSibling;
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
+    });
+  });
+  
