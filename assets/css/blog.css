@@ -143,4 +143,239 @@
   .pros-cons ul li {
     margin-bottom: 10px;
   }
-  
+.features-section {
+  margin-bottom: 30px;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  column-gap: 50px;
+  row-gap: 20px;
+}
+
+.feature-item h4 {
+  color: #fa9038;
+  font-size: 20px;
+}
+
+/* Infographic Section */
+.infographic-grid {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.infographic-card {
+  flex: 1;
+  padding: 15px;
+}
+
+.infographic-card h4 {
+  margin-bottom: 10px;
+}
+.practice-section ol{
+  margin-left: 4%;
+}
+.tools-section h4{
+  font-size: 1.2rem;
+}
+.tools-section .tools-grid{
+  display: flex;
+  gap: 30px;
+  text-align: center;
+}
+/* Trends Section */
+.trends, .tips, .landscape, .future {
+  margin-bottom: 10px;
+}
+
+.trends h3, .tips h3, .landscape h3, .future h3 {
+  color: #fa9038;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.trend-item, .tip-item {
+  margin-bottom: 20px;
+}
+
+.trend-item h4, .tip-item h4 {
+  color: #730505;
+  font-size: 20px;
+}
+.tip-item h4 {
+  color: black;
+}
+
+/* Skills Section */
+.skills-grid {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.skill-item {
+  text-align: center;
+  margin: 20px;
+  max-width: 200px;
+}
+
+.skill-item img {
+  max-width: 60px;
+}
+
+.skill-item h4 {
+  color: #fa9038;
+  margin-top: 10px;
+}
+
+/* Learning Paths */
+.learning-list {
+  list-style: none;
+  padding: 0;
+}
+
+.learning-list li {
+  margin-bottom: 10px;
+}
+
+/* Showcase Section */
+.showcase-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+}
+
+.showcase-item h4 {
+  color: #fa9038;
+}
+
+.skills-grid .skill-item i,
+.showcase-grid .showcase-item i {
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+.challenge-item h4 i {
+  margin-right: 10px;
+}
+.showcase-grid .showcase-item i {
+  font-size: 40px;
+}
+/* Reasons Section */
+.reasons-list {
+  list-style: none;
+  padding: 0;
+}
+
+.reasons-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  font-size: 1em;
+}
+
+.reasons-list i {
+  font-size: 1.5em;
+  color: #fa9038;
+  margin-right: 15px;
+}
+
+/* Steps Section */
+.steps-timeline {
+  border-left: 3px solid #fa9038;
+  margin: 20px 0;
+  padding-left: 20px;
+}
+
+.timeline-item {
+  margin-bottom: 20px;
+}
+
+.timeline-item h4 {
+  color: #730505;
+  margin-bottom: 8px;
+}
+
+.timeline-item p {
+  margin: 0;
+}
+
+/* Tools Section */
+.tools-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.tool-item {
+  border-radius: 8px;
+  text-align: center;
+  padding: 20px;
+}
+
+.tool-item i {
+  font-size: 2em;
+  color: #fa9038;
+  margin-bottom: 10px;
+}
+
+.tool-item h4 {
+  margin: 10px 0;
+  color: #730505;
+}
+
+/* Challenges Section */
+.challenges-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.challenge-card {
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.challenge-card h4 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.challenge-card h4 i {
+  font-size: 1.5em;
+  color: #fa9038;
+  margin-right: 10px;
+}
+
+.challenge-card p {
+  margin: 0;
+}
+
+/* Benefits Section */
+.benefits-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.benefit-item {
+  display: flex;
+  align-items: flex-start;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.benefit-item i {
+  font-size: 2em;
+  color: #fa9038;
+  margin-right: 15px;
+}
+
+.benefit-item p {
+  margin: 0;
+}
+
+
