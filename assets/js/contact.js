@@ -5,10 +5,10 @@ document
 
     emailjs
       .sendForm(
-        "service_2gmg5fp", // Replace with your Service ID
-        "template_mum7mbp", // Replace with your Template ID
+        "service_2gmg5fp",
+        "template_mum7mbp", 
         this,
-        "VU5qnx-uM6XsHtIWm" // Replace with your Public Key
+        "VU5qnx-uM6XsHtIWm" 
       )
       .then(
         function (response) {
