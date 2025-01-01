@@ -1,0 +1,99 @@
+<section class="apply-section">
+  <div class="form-container">
+    <h2>Apply for a Role</h2>
+    <form
+      id="applyForm"
+      name="applyForm"
+      method="POST"
+      data-netlify="true"
+      enctype="multipart/form-data"
+    >
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="coverLetter">Cover Letter</label>
+      <textarea id="coverLetter" name="coverLetter" required></textarea>
+
+      <label for="cv">Upload CV</label>
+      <input
+        type="file"
+        id="cv"
+        name="cv"
+        accept=".pdf,.doc,.docx,.txt"
+        required
+      />
+
+      <button type="submit" class="btn-cta">Submit Application</button>
+    </form>
+  </div>
+</section>
+<style>
+  .apply-section {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.5); /* Darken the background */
+    color: #fff;
+    padding: 60px 0;
+  }
+
+  .form-container {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #2d5d7b; /* Your brand color */
+    padding: 30px;
+    border-radius: 8px;
+  }
+
+  .form-container h2 {
+    text-align: center;
+    color: #fff;
+  }
+
+  .form-container input,
+  .form-container textarea,
+  .form-container button {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 4px;
+    border: none;
+  }
+
+  .form-container button {
+    background-color: #fa9038; /* Your bright orange color */
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .form-container button:hover {
+    background-color: #f7cc7f; /* Light beige hover effect */
+  }
+</style>
+
+<script>
+  document
+    .getElementById("applyForm")
+    .addEventListener("submit", function (event) {
+      event.preventDefault();
+
+      // Collect form data
+      const formData = new FormData(this);
+
+      // Send the form data via Fetch API
+      fetch("/?form-name=applyForm", {
+        method: "POST",
+        body: formData,
+      })
+        .then((response) => response.json())
+        .then((result) => {
+          alert("Application submitted successfully!");
+          document.getElementById("applyForm").reset();
+        })
+        .catch((error) => {
+          alert("Error submitting application. Please try again later.");
+          console.error("Error:", error);
+        });
+    });
+</script>
