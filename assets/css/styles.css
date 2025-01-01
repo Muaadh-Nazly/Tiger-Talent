@@ -122,8 +122,12 @@ p {
     font-size: .7rem;
     width: max-content;
 }
-
-
+.search-icon a{
+  text-decoration: none;
+}
+.search-icon a:visited{
+  color: white;
+}
 /* Off-Canvas Menu */
 .offcanvas-menu {
     position: fixed;
