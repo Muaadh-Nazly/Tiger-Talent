@@ -370,7 +370,75 @@ p {
 .social-icons a:hover {
   color: #f7cc7f;
 }
+.policy-content {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
 
+.policy-content h2 {
+  color: #730505;
+  margin-bottom: 10px;
+}
+
+.policy-content p,
+.policy-content ul {
+  margin: 10px 0;
+}
+
+.policy-content ul {
+  padding-left: 20px;
+}
+
+.terms-content {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 30px;
+  background: #ffffff; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.terms-content div {
+  margin-bottom: 30px;
+}
+
+.terms-content h2 {
+  color: #730505; 
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #fa9038; 
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.terms-content p,
+.terms-content ul {
+  margin: 10px 0;
+  font-size: 1rem;
+  color: #555; 
+}
+
+.terms-content ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.terms-content ul li {
+  margin-bottom: 10px;
+}
+
+/* Links */
+.terms-content a {
+  color: #fa9038; 
+  text-decoration: none;
+}
+
+.terms-content a:hover {
+  text-decoration: underline;
+}
 .intro{
     padding: 4%;
     display: flex;

@@ -5,15 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta property="og:image" content="/assets/images/logo.png" />
     <meta property="og:type" content="website" />
-    <title>Contact Us</title>
+    <title>Privacy Poilicy</title>
     <link rel="stylesheet" href="/assets/css/styles.css" />
     <!-- Font Awesome CDN for icons -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
-    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-
     <link
       rel="shortcut icon"
       type="image/x-icon"
@@ -21,13 +19,7 @@
     />
   </head>
   <body>
-    <header
-      class="hero"
-      style="
-        background-image: url(/assets/images/contact-us.jpg);
-        height: 100vh;
-      "
-    >
+    <header class="hero">
       <div class="overlay"></div>
       <div class="navbar">
         <div class="logo">
@@ -53,59 +45,50 @@
         </nav>
       </div>
       <div class="hero-content">
-        <h1>We'd Love to Hear From You</h1>
+        <h1>Privacy Policy</h1>
         <p>
-          Whether you're an employer seeking top talent or a candidate looking
-          for your next big opportunity, we're here to help.
+          We connect top-tier Sri Lankan tech professionals with leading global
+          companies for remote and on-site roles.
         </p>
       </div>
     </header>
-
-    <!-- Contact Form Section -->
-    <div class="contact-section">
-      <div class="contact-form">
-        <h3>Get in Touch</h3>
-        <form id="contact-form">
-          <label for="name">Full Name</label>
-          <input type="text" name="to_name" value="TigerTalent Team" hidden />
-          <input
-            type="text"
-            id="name"
-            name="from_name"
-            placeholder="Enter your full name"
-            required
-          />
-
-          <label for="email">Email</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="Enter your email"
-            required
-          />
-
-          <label for="message">Message</label>
-          <textarea
-            id="message"
-            rows="5"
-            name="message"
-            placeholder="Type your message here"
-            required
-          ></textarea>
-
-          <button class="btn-cta" type="submit">Send Message</button>
-        </form>
+    <main class="policy-content">
+      <div class="introduction">
+        <h2>Introduction</h2>
+        <p>
+          At TigerTalent Recruitment, we prioritize your privacy. This policy
+          outlines how we collect, use, and safeguard your personal information.
+        </p>
       </div>
 
-      <!-- Contact Info -->
-      <div class="contact-info">
-        <h3>Contact Details</h3>
-        <p><strong>Email:</strong> contact@tigertalent.com</p>
-        <p><strong>Phone:</strong> +94 12 3456789</p>
-        <p><strong>Address:</strong> 123 Main Street, Colombo, Sri Lanka</p>
+      <div class="information">
+        <h2>Information We Collect</h2>
+        <ul>
+          <li>Your name, email address, and contact details.</li>
+          <li>
+            Professional details like your resume, skills, and work experience.
+          </li>
+          <li>Usage data from our website and services.</li>
+        </ul>
       </div>
-    </div>
+
+      <div class="usage">
+        <h2>How We Use Your Information</h2>
+        <ul>
+          <li>To connect you with potential employers and opportunities.</li>
+          <li>To improve our services based on user feedback.</li>
+          <li>To communicate with you regarding updates and career advice.</li>
+        </ul>
+      </div>
+
+      <div class="protection">
+        <h2>How We Protect Your Information</h2>
+        <p>
+          We implement robust security measures to ensure your personal data is
+          protected. Access is limited to authorized personnel only.
+        </p>
+      </div>
+    </main>
     <footer class="footer">
       <div class="footer-container">
         <!-- Company Details -->
@@ -149,5 +132,4 @@
     </footer>
   </body>
   <script src="/assets/js/main.js"></script>
-  <script src="/assets/js/contact.js"></script>
 </html>
