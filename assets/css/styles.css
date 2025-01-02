@@ -636,6 +636,106 @@ p {
   object-fit: cover;
 }
 
+.hidden {
+  display: none ;
+}
+
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 999;
+}
+
+#form-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 2rem;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 50%;
+}
+#form-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Form group styling for labels and inputs */
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #fa9038; 
+  outline: none;
+}
+
+/* Placeholder styling */
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #aaa;
+}
+
+/* Textarea styling */
+.form-group textarea {
+  resize:none;
+  height: 100px;
+}
+/* File Upload Section */
+.form-group .file-upload {
+  position: relative;
+}
+
+.file-upload input[type="file"] {
+  display: none; /* Hide the default file input */
+}
+
+.file-upload .file-label {
+  display: inline-block;
+  background-color: #fa9038; /* Brand color */
+  color: #fff;
+  padding: 12px 20px;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.file-upload .file-label:hover {
+  background-color: #e88a2c; /* Slightly darker shade */
+}
+
+/* When a file is selected, show the file name next to the button */
+.file-upload input[type="file"]:valid + .file-label {
+  background-color: #028b07; 
+  color: #fff;
+}
+
 /* Mission Section */
 .mission {
   padding: 40px 20px;

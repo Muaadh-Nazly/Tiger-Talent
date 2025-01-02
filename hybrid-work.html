@@ -87,7 +87,7 @@
         </li>
       </ul>
     </div>
-
+    <div id="overlay" class="hidden"></div>
     <!-- Available Roles Section -->
     <div id="explore" class="roles-section">
       <h2>Hybrid Work Opportunities</h2>
@@ -103,7 +103,7 @@
             stakeholders from different locations, fostering innovation and
             delivering outstanding results.
           </p>
-          <button class="btn-cta">Apply Now</button>
+          <button class="btn-cta apply-btn">Apply Now</button>
         </div>
         <div class="role" data-animate="diagonal-down">
           <img src="/assets/images/logo.png" alt="logo" />
@@ -116,7 +116,7 @@
             research and deliver actionable insights that shape successful
             strategies.
           </p>
-          <button class="btn-cta">Apply Now</button>
+          <button class="btn-cta apply-btn">Apply Now</button>
         </div>
         <div class="role" data-animate="fade-in">
           <img src="/assets/images/logo.png" alt="logo" />
@@ -129,10 +129,72 @@
             flexibility to maximize creativity and productivity, delivering
             impactful results that drive brand success.
           </p>
-          <button class="btn-cta">Apply Now</button>
+          <button class="btn-cta apply-btn">Apply Now</button>
         </div>
       </div>
     </div>
+    <section class="apply-section">
+      <div id="form-container" class="hidden">
+        <form
+          id="applyForm"
+          name="applyForm"
+          method="POST"
+          data-netlify="true"
+          enctype="multipart/form-data"
+        >
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Enter your full name"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter your email"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="coverLetter">Cover Letter</label>
+            <textarea
+              id="coverLetter"
+              name="coverLetter"
+              placeholder="Write your cover letter here"
+              required
+            ></textarea>
+          </div>
+          <div class="form-group">
+            <label for="cv">Upload CV</label>
+            <div class="file-upload">
+              <input
+                type="file"
+                id="cv"
+                name="cv"
+                accept=".pdf,.doc,.docx,.txt"
+                required
+                class="file-input"
+              />
+              <label for="cv" class="file-label">Choose a file</label>
+              <span id="file-name" class="file-name"></span>
+              <!-- Element to show the file name -->
+            </div>
+          </div>
+
+          <button type="submit" class="btn-cta">Submit Application</button>
+          <button type="button" id="close-form" class="btn-cta">Close</button>
+        </form>
+      </div>
+    </section>
 
     <!-- FAQ Section -->
     <div class="faq-section">

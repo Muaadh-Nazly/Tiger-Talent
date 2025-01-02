@@ -119,3 +119,42 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
   
+  document.addEventListener("DOMContentLoaded", () => {
+    // Get references to the overlay and form container
+    const overlay = document.getElementById("overlay");
+    const formContainer = document.getElementById("form-container");
+    const closeFormButton = document.getElementById("close-form");
+
+    // Get all "Apply Now" buttons
+    const applyButtons = document.querySelectorAll(".apply-btn");
+
+    // Function to open the form
+    const openForm = () => {
+      // Remove the 'hidden' class to show overlay and form container
+      formContainer.classList.remove("hidden");
+      overlay.classList.remove("hidden");
+    };
+
+    // Function to close the form
+    const closeForm = () => {
+      // Add the 'hidden' class to hide overlay and form container
+      overlay.classList.add("hidden");
+      formContainer.classList.add("hidden");
+    };
+
+    // Add event listeners to all "Apply Now" buttons
+    applyButtons.forEach(button => {
+      button.addEventListener("click", openForm);
+    });
+
+    // Add event listener to close button
+    closeFormButton.addEventListener("click", closeForm);
+
+    // Add event listener to overlay to close form when clicked
+    overlay.addEventListener("click", closeForm);
+});
+document.getElementById('cv').addEventListener('change', function(event) {
+  const fileName = event.target.files[0] ? event.target.files[0].name : 'No file chosen';
+  const fileNameDisplay = document.getElementById('file-name');
+  fileNameDisplay.textContent = fileName;
+});
